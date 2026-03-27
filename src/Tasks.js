@@ -10,6 +10,7 @@ export default function Tasks({ token, onLogout }) {
   // Load tasks when component mounts
   useEffect(() => {
     fetchTasks();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   async function fetchTasks() {
